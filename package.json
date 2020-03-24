@@ -1,14 +1,14 @@
 {
   "name": "nodejs_template",
   "version": "1.0.0",
-  "description": "A template for creating NodeJS projects",
+  "description": "A tour of NodeJS and JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ourarash/nodejs_template.git"
+    "url": "git+https://github.com/ourarash/nodejs_tour.git"
   },
   "keywords": [
     "nodejs",
@@ -28,6 +28,19 @@
   },
   "dependencies": {
     "@types/p5": "^0.9.0",
-    "babar": "^0.2.0"
+    "asciichart": "^1.5.11",
+    "babar": "^0.2.0",
+    "coingecko-api": "^1.0.10",
+    "cryptocompare": "^1.0.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "html-entities": "^1.2.1",
+    "instagram-scraping": "^1.0.13",
+    "moment": "^2.24.0",
+    "momentjs": "^2.0.0",
+    "newsapi": "^2.4.0",
+    "node-fetch": "^2.6.0",
+    "node-instagram": "^4.3.0"
   }
 }

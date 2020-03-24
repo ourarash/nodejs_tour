@@ -1,5 +1,5 @@
 const assert = require("assert");
-const myLib = require("../lib/my_lib.js");
+const myLib = require("../../lib/hello_world.js");
 
 // Testing HelloWorld
 describe("Hello world test with Mocha", () => {

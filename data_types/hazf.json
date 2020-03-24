@@ -1,0 +1,6 @@
+{
+  "color": "red",
+  "bought_year": 2002,
+  "owners": ["Ari", "Jess", "Tom"],
+  "age": 12
+}

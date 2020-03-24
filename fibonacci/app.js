@@ -21,12 +21,12 @@ function fib(n) {
 //-----------------------------------------------------------------------------
 /**
  * Converts a map of number to usage values to an array
- * @param {Object} usageMap 
+ * @param {Object} usageMap
  * @returns {Array}
  */
-function convertUsageMapToArray(usageMap){
+function convertUsageMapToArray(usageMap) {
   let data = [];
-  for(let [key,value] of Object.entries(usageMap)){
+  for (let [key, value] of Object.entries(usageMap)) {
     data.push([key, value]);
   }
   return data;
@@ -43,8 +43,8 @@ function main() {
   console.log(
     babar(data, {
       color: "green",
-      width: 40,
-      height: 10
+      width: 90,
+      height: 10,
     })
   );
 }
