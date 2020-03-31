@@ -5,13 +5,14 @@ function addDefaultName(person) {
     firstName: "Ari",
     lastName: "jones"
   };
-
+  
   person = p2;
+  return person;
 }
 
 function main() {
   let p = {};
-  addDefaultName(p);
+  p = addDefaultName(p);
   console.log("p: ", p);
 }
 
