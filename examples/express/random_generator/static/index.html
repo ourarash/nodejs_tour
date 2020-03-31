@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Number Generator</title>
+    <style>
+      body {
+        .classy {
+          padding: 2.5px;
+          border-radius: 6px;
+          background-color: green;
+          color: white;
+          font-size: 14px;
+        }
+
+        .classy:hover {
+          opacity: 0.5;
+          background-color: black;
+        }
+        background-color: black;
+        color: #49ff0d;
+        line-height: 1.5;
+        font-size: 18px;
+      }
+
+      /* All elements width includes borders and padding*/
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Rows*/
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* Classes containing "col-"*/
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+      }
+
+      /* Column width for small devices (i.e. smart phones)*/
+      [class*="col-"] {
+        width: 100%;
+      }
+
+      /* Column width for large devices (i.e. computers)*/
+      @media only screen and (min-width: 768px) {
+        .col-1 {
+          width: 8.33%;
+        }
+        .col-2 {
+          width: 16.66%;
+        }
+        .col-3 {
+          width: 25%;
+        }
+        .col-4 {
+          width: 33.33%;
+        }
+        .col-5 {
+          width: 41.66%;
+        }
+        .col-6 {
+          width: 50%;
+        }
+        .col-7 {
+          width: 58.33%;
+        }
+        .col-8 {
+          width: 66.66%;
+        }
+        .col-9 {
+          width: 75%;
+        }
+        .col-10 {
+          width: 83.33%;
+        }
+        .col-11 {
+          width: 91.66%;
+        }
+        .col-12 {
+          width: 100%;
+        }
+      }
+
+      /* Column width for large devices (i.e. tablets)*/
+      @media only screen and (min-width: 600px) {
+        .col-t-1 {
+          width: 8.33%;
+        }
+        .col-t-2 {
+          width: 16.66%;
+        }
+        .col-t-3 {
+          width: 25%;
+        }
+        .col-t-4 {
+          width: 33.33%;
+        }
+        .col-t-5 {
+          width: 41.66%;
+        }
+        .col-t-6 {
+          width: 50%;
+        }
+        .col-t-7 {
+          width: 58.33%;
+        }
+        .col-t-8 {
+          width: 66.66%;
+        }
+        .col-t-9 {
+          width: 75%;
+        }
+        .col-t-10 {
+          width: 83.33%;
+        }
+        .col-t-11 {
+          width: 91.66%;
+        }
+        .col-t-12 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8" align="center">
+        <h1>Random Number Generator</h1>
+        <h3>by Emma, Daniel and Friends</h3>
+        <form method="post" action="/">
+          I will generate a random integer between 0 and<br />
+          <input type="number" name="max_value" placeholder="Max Value" /><br />
+          <input type="submit" name="submit" value="Generate!" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

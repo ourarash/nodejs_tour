@@ -1,6 +1,11 @@
-// "use strict";
-let myLib = require("../lib/hello_world.js");
 
+
+/**
+ * Adds two values
+ * @param {Number | String} a 
+ * @param {Number | String} b 
+ * @returns {Number | String}
+ */
 function add(a, b){
   return a + b;
 }

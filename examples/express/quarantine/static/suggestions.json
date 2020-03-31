@@ -1,0 +1,14 @@
+{
+  "art": [
+    {
+      "title": "Learn Photoshop for beginners",
+      "url": "https://www.youtube.com/watch?v=KfXSt4XLedc",
+      "hours": 0.5
+    }
+  ],
+  "reading": [
+    { "title": "Animal Farm", "hours": 1.75 },
+    { "title": "The Complete Book of Home Organization", "hours": 3.5 },
+    { "title": "Gone with the wind.", "words": 418053, "hours": 28 }
+  ]
+}

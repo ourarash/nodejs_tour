@@ -33,10 +33,10 @@ function convertUsageMapToArray(usageMap) {
 }
 //-----------------------------------------------------------------------------
 function main() {
-  let fibExample = fib(30);
+  let fibExample = fib(6);
 
   console.log("fibExample: ", fibExample);
-  console.log("usageMap: ", usageMap);
+  console.log('usageMap: ', JSON.stringify(usageMap, null, 2));
 
   let data = convertUsageMapToArray(usageMap);
 

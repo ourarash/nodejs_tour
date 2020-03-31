@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quarantine Planner</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8" align="center">
+        <h1>Quarantine Planner</h1>
+
+        <form method="post" action="/">
+          I will tell you what you could have done with your quarantine time!<br />
+          <div>
+            <span>How many extra hours do you have per day?</span>
+            <input type="number" name="hours" placeholder="hours" /><br />
+          </div>
+          <div>
+            <div>What are you into?</div>
+            <input
+              type="checkbox"
+              id="category1"
+              name="category1"
+              value="art"
+            />
+            <label for="category1">Art</label><br />
+            <input
+              type="checkbox"
+              id="category2"
+              name="category2"
+              value="sport"
+            />
+            <label for="category2">Sport</label><br />
+            <input
+              type="checkbox"
+              id="category3"
+              name="category3"
+              value="reading"
+            />
+            <label for="category3">Reading</label><br />
+          </div>
+
+          <input type="submit" name="submit" value="Calculate!" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

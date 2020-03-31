@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toilet Paper Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8" align="center">
+        <h1>Toilet Paper Calculator</h1>
+
+        <form method="post" action="/">
+          I will calculate how many toilet paper rolls you need...<br />
+          <div>
+            <span>How many trips a day do you take?</span>
+            <input
+              type="number"
+              name="times_per_day"
+              placeholder="How many times per day?"
+            /><br />
+          </div>
+          <div>
+            <span>How many days of supplies you wanna have?</span>
+            <input
+              type="number"
+              name="how_many_days"
+              placeholder="How many day?"
+            /><br />
+          </div>
+          
+          <input type="submit" name="submit" value="Calculate!" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

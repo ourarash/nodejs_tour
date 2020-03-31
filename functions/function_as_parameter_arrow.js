@@ -1,4 +1,6 @@
-let r = operate(5, 6, add);
+function operate(a, b, f) {
+  return f(a, b);
+}
 
 let r2 = operate(5, 6, (a, b) => a + b);
 
