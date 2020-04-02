@@ -1,0 +1,17 @@
+{
+  "graph": {
+    "1": [
+      { "successor": "2", "weight": 3 },
+      { "successor": "3", "weight": 4 },
+      { "successor": "4", "weight": 1 }
+    ],
+    "2": [
+      { "successor": "3", "weight": 7 },
+      { "successor": "4", "weight": 2 }
+    ],
+
+    "3": [{ "successor": "2", "weight": 5 }],
+
+    "4": [{ "successor": "1", "weight": 2 }]
+  }
+}

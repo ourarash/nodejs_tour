@@ -2,6 +2,8 @@
  * Finds Fibonacci number n
  * @param {Number} n 
  */
+
+//  Tabulation
 function fib(n) {
   let d = [];
   for (let i = 0; i <= n; i++) {

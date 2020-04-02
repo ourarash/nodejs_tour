@@ -16,6 +16,8 @@ function fib(n) {
  * @param {Number} n
  * @param {Object} memo
  */
+
+
 function fibHelper(n, memo) {
   if (memo[n] != null) {
     return memo[n];
@@ -50,17 +52,17 @@ function main() {
   let fibExample = fib(100);
 
   console.log("fibExample: ", fibExample);
-  console.log("usageMap: ", usageMap);
+  // console.log("usageMap: ", usageMap);
 
   let data = convertUsageMapToArray(usageMap);
 
-  console.log(
-    babar(data, {
-      color: "green",
-      width: 40,
-      height: 10
-    })
-  );
+  // console.log(
+  //   babar(data, {
+  //     color: "green",
+  //     width: 40,
+  //     height: 10
+  //   })
+  // );
 }
 
 main();

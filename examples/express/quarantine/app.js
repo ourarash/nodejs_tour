@@ -15,8 +15,6 @@ app.get("/", function(req, res) {
     handlePost(req, res, req.query);
   } else {
     console.log("No query");
-    handlePost(req, res);
-
     res.sendFile(__dirname + "/static/index2.html");
   }
 });
@@ -33,14 +31,14 @@ function handlePost(req, res, query) {
   let categories = [];
   let totalTime;
 
-  if (query) {
-    categories = Object.values(query);
-    totalTime = query.hours;
+  if (!query) {
+    return;
+
   } else {
-    totalTime = 30 * req.body.hours;
-    for (let key of Object.keys(req.body)) {
+    totalTime = 30 * req.query.hours;
+    for (let key of Object.keys(req.query)) {
       if (key.match(/category.*/)) {
-        categories.push(req.body[key]);
+        categories.push(req.query[key]);
       }
     }
   }
@@ -52,8 +50,8 @@ function handlePost(req, res, query) {
     totalHours: totalTime
   };
 
-  console.log("categories: ", JSON.stringify(categories));
-  console.log("suggestions: ", JSON.stringify(suggestions, null, 2));
+  // console.log("categories: ", JSON.stringify(categories));
+  // console.log("suggestions: ", JSON.stringify(suggestions, null, 2));
 
   for (let c of categories) {
     if (suggestions[c]) {
@@ -61,7 +59,7 @@ function handlePost(req, res, query) {
         if (output.remainingTime >= s.hours) {
           output.suggestions.push({
             title: s.title,
-            url: s.url,
+            url: `<a href=${s.url}\">${s.url}</a>`,
             hours: s.hours,
             category: c
           });

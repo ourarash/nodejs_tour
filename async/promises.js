@@ -1,17 +1,19 @@
 // Promise
-const myPromise = new Promise((resolve, reject) => {
-  let doesItFail = Math.random();
+const myPromise = function() {
+  return new Promise((resolve, reject) => {
+    let doesItFail = Math.random();
 
-  // Doesn't fail:
-  if (doesItFail > 0.5) {
-    resolve("Success!");
-  } else {
-    const reason = new Error("Failed!");
-    reject(reason);
-  }
-});
+    // Doesn't fail:
+    if (doesItFail > 0.5) {
+      resolve("Success!");
+    } else {
+      const reason = new Error("Failed!");
+      reject(reason);
+    }
+  });
+};
 
-myPromise
+myPromise()
   .then(response => {
     console.log("response: ", response);
   })
