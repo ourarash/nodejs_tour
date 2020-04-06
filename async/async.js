@@ -8,8 +8,12 @@ const myPromise = function() {
 
 async function chain(){
   let d;
+  
   d = await myPromise();
+
   console.log('d: ', d);
+  
   d = await myPromise();
+  
   console.log('d: ', d);
 }

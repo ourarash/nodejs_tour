@@ -13,6 +13,7 @@ const myPromise = function() {
   });
 };
 
+
 myPromise()
   .then(response => {
     console.log("response: ", response);

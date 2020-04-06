@@ -4,12 +4,14 @@ const nodemailer = require("nodemailer");
 const moment = require("moment");
 
 // Gmail password
+// Change this line to:
+// let pw = "youPassWord";
 let pw = require("../../nocheckin.js").pw;
 
 // Set gmail username and password
 let spec = `smtps://ee599.sp2020@gmail.com:${pw}@smtp.gmail.com`;
 
-// Sends an email using gmail account
+// // Sends an email using gmail account
 function SendMail(mailOptions) {
   var transporter = nodemailer.createTransport(spec);
   return transporter.sendMail(mailOptions, function(error, info) {
@@ -29,7 +31,7 @@ function SendMail(mailOptions) {
 }
 //-----------------------------------------------------------
 
-async function main() {
+async function sendNotification() {
   let data = await cc.price("BTC", "USD");
   console.log(data);
   
@@ -49,4 +51,5 @@ async function main() {
   SendMail(mailOptions);
 }
 
-main();
+
+setInterval( sendNotification, 3000);

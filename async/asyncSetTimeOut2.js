@@ -6,6 +6,7 @@ const delay = function(t) {
 };
 
 async function chain() {
+  // for (auto t: timeouts) c++ version
   for (let t of timeouts) {
     console.log("Waiting for " + t + " ms...");
     await delay(t);

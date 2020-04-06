@@ -5,7 +5,7 @@ const delay = function(t) {
   return new Promise(resolve => setTimeout(resolve, t));
 };
 
-const delay_arrow = t => new Promise(resolve => setTimeout(resolve, t));
+// const delay_arrow = t => new Promise(resolve => setTimeout(resolve, t));
 
 delay(timeouts[i])
   .then(() => {
