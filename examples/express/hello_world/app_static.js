@@ -1,6 +1,7 @@
 const express = require("express");
 let app = express();
 
+// Serve anything under folder public
 app.use(express.static('public'));
 
 app.get("/", function(req, res) {
